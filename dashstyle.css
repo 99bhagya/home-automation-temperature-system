@@ -1,0 +1,136 @@
+body {
+	font-family: 'Nunito', sans-serif;
+	margin: 0;
+	padding: 0;
+    background-image: url(img/photo.jpg);
+    background-size: cover;
+}
+
+section {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+    margin-top: 20px;
+}
+
+.data {
+	display: flex;
+	flex-grow: 1;
+    text-align: center;
+}
+
+.column {
+	flex-grow: 10;
+	margin: 50px;
+	background-color: rgb(252, 251, 251);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 1px;
+}
+
+.column h2{
+    font-size: 35px;
+}
+
+.temperature {
+	display: flex;
+	align-items: center;
+}
+
+.temperature p{
+    font-size: 5em;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;    
+
+}
+
+.temperature i.fas.fa-thermometer-half {
+    color: red;
+    font-size: 0.9em;
+    margin-left: 50px;
+    padding-right: 50px;
+
+}
+
+
+.humidity p {
+	font-size: 5em;
+	text-align: center;
+    color: black;
+    margin-top: 20px;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+.humidity i.fas.fa-tint{
+    color: blue;
+    font-size: 0.9em;
+    padding-right: 50px;
+    
+}
+
+.Fahrenheit{
+
+    width: 350px;
+    height: 50px;
+    background: none;
+    outline: none;
+    border: 3px solid red;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 7px;
+    color: aliceblue;
+}
+
+
+.Kelvin{
+
+    width: 350px;
+    height: 50px;
+    background: none;
+    border: 3px solid rgb(233, 144, 10);
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 7px;
+    color: aliceblue;
+}
+
+.Celsius{
+    width: 350px;
+    height: 50px;
+    background: none;
+    border: 3px solid rgb(26, 30, 240);
+    outline: none;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 7px;
+    color: aliceblue;
+     
+}
+
+.temp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    
+}
+
+.temp:hover{
+    color: brown;
+}
